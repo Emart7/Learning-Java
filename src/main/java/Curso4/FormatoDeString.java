@@ -7,6 +7,9 @@ public class FormatoDeString {
         int a = 3;
         double b = 12.40;
 
+        System.out.println("El tipo String y .format");
+        System.out.println();
+
         System.out.println("El valor de a es: " + a);
         System.out.println(String.format("El valor de a es: %d", a));
 

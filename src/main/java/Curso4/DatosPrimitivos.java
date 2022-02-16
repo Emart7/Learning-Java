@@ -1,5 +1,7 @@
 package Curso4;
 
+import jdk.swing.interop.SwingInterOpUtils;
+
 public class DatosPrimitivos {
 
     public static void datosPrimitivos(){
@@ -11,6 +13,8 @@ public class DatosPrimitivos {
         boolean e = true;
         char f = 'e';
 
+        System.out.println("Los tipos de datos primitivos son: ");
+        System.out.println();
         System.out.println("entero = " + a);
         System.out.println("double = " + b);
         System.out.println("float = " + c);
