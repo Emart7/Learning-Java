@@ -1,8 +1,6 @@
 package Curso4;
 
-import Curso4.ejercicios.ejercicio1;
-import Curso4.ejercicios.ejercicio2;
-import Curso4.ejercicios.ejercicio4;
+import Curso4.cinebox.movie.Movie;
 
 public class Main {
 
@@ -23,5 +21,20 @@ public class Main {
 //        System.out.println();
 //        ejercicio4.calcularPromedioCliente();
 //        System.out.println();
+
+
+        //Exercises with class Movie
+        Movie otherHouse = new Movie();
+        Movie toyStory = new Movie("Toy Story", "Animation", 95);
+        Movie starWars = new Movie("StarWars", "Fiction", 120);
+        Movie backToTheFuture = new Movie("Back To The Future", "Fiction", 80);
+
+        starWars.play();
+        starWars.pause();
+        toyStory.play();
+
+        int toyStoryTotalFrames = toyStory.getTotalFrames();
+
+        System.out.println("Total frames: " + toyStoryTotalFrames);
     }
 }
