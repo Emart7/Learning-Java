@@ -1,4 +1,4 @@
-package Curso4.cinebox;
+package Curso4.conceptos;
 
 import java.util.Random;
 

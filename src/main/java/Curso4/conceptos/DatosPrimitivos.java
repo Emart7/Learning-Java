@@ -1,4 +1,4 @@
-package Curso4;
+package Curso4.conceptos;
 
 import jdk.swing.interop.SwingInterOpUtils;
 

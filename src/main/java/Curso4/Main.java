@@ -1,6 +1,7 @@
 package Curso4;
 
 import Curso4.cinebox.movie.Movie;
+import Curso4.cinebox.series.Series;
 
 public class Main {
 
@@ -25,16 +26,27 @@ public class Main {
 
         //Exercises with class Movie
         Movie otherHouse = new Movie();
-        Movie toyStory = new Movie("Toy Story", "Animation", 95);
-        Movie starWars = new Movie("StarWars", "Fiction", 120);
-        Movie backToTheFuture = new Movie("Back To The Future", "Fiction", 80);
 
-        starWars.play();
-        starWars.pause();
-        toyStory.play();
+        otherHouse.setTitle("Finding Nemo");
+        otherHouse.setGender("childish");
+        otherHouse.setWonOscar(true);
 
-        int toyStoryTotalFrames = toyStory.getTotalFrames();
+        Series theBigBangTheory = new Series();
+        theBigBangTheory.setTitle("The Big Bang Theory");
+        theBigBangTheory.setGender("comedy");
+        theBigBangTheory.setEpisodeDuration(45);
+        theBigBangTheory.setTotalEpisodes(10);
+        theBigBangTheory.setTotalSeasons(5);
 
-        System.out.println("Total frames: " + toyStoryTotalFrames);
+        System.out.println(otherHouse.getTitle());
+
+        System.out.println(otherHouse);
+        System.out.println(theBigBangTheory);
+
+        theBigBangTheory.play();
+        theBigBangTheory.pause();
+        otherHouse.play();
+        otherHouse.pause();
+
     }
 }
