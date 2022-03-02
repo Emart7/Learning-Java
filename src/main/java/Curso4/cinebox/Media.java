@@ -2,9 +2,21 @@ package Curso4.cinebox;
 
 public class Media {
 
-    public String title;
-    public String gender;
-    public static int duration;
+    private String title;
+    private String gender;
+    private static int duration;
+    private String synopsis;
+    private String content;
+
+    public Media(String title, String gender, int duration) {
+        this.title = title;
+        this.gender = gender;
+        this.duration = duration;
+    }
+
+    public Media() {
+
+    }
 
     public String getTitle() {
         return title;
@@ -22,12 +34,24 @@ public class Media {
         this.gender = gender;
     }
 
-    public static int getDuration() {
+    public int getDuration() {
         return duration;
     }
 
-    public static void setDuration(int duration) {
+    public void setDuration(int duration) {
         Media.duration = duration;
+    }
+
+    public String getSynopsis() {
+        return synopsis;
+    }
+
+    public void setSynopsis(String synopsis) {
+        this.synopsis = synopsis;
+    }
+
+    public void setContent(String content) {
+        this.content = content;
     }
 
     public void play(){
@@ -36,6 +60,10 @@ public class Media {
 
     public void pause(){
         System.out.println("Pausing " + title);
+    }
+
+    public void moveForward(int minutes){
+        System.out.println("Moving forward " + minutes + " minutes");
     }
 
     @Override
