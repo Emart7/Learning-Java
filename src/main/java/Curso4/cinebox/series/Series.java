@@ -31,6 +31,30 @@ public class Series extends Media {
         return episodeDuration * totalEpisodes * totalSeasons;
     }
 
+    @Override
+    public void play() {
+        System.out.println("Which episode do you want to play? " + super.getTitle());
+//        System.out.println("Which episode do you want to play? ");
+//        Scanner sc = new Scanner(System.in);
+//        int episodeIndex = sc.nextInt();
+//        printSomething("Playing episode " + episodeIndex + " of " + super.getTitle());
+    }
+
+    @Override
+    public void stop() {
+
+    }
+
+    @Override
+    public void pause() {
+
+    }
+
+    @Override
+    public void resume() {
+
+    }
+
     public int getTotalEpisodes() {
         return totalEpisodes;
     }

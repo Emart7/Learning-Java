@@ -16,6 +16,20 @@ public class Movie extends Media {
     }
 
     @Override
+    public void play(){
+        printSomething("Playing movie " + super.getTitle());
+    }
+
+    @Override
+    public void stop(){}
+
+    @Override
+    public void pause(){}
+
+    @Override
+    public void resume(){}
+
+    @Override
     public int getDuration(){
         return super.getDuration();
     }

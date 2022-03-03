@@ -1,6 +1,6 @@
 package Curso4.cinebox;
 
-public class Media {
+public abstract class Media implements Comparable<Media> {
 
     private String title;
     private String gender;
@@ -12,6 +12,30 @@ public class Media {
         this.title = title;
         this.gender = gender;
         this.duration = duration;
+    }
+
+    @Override
+    public boolean equals(Object object) {
+        if (object instanceof Media) {
+            return this.title.equals(((Media) object).getTitle()) && this.gender.equals(((Media) object).getGender());
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public int compareTo(Media otherMedia) {
+//        //in alphabetical order
+        return this.getTitle().compareTo(otherMedia.getTitle());
+
+        //by duration of the chapter
+//        if (this.getDuration() > otherMedia.getDuration()) {
+//            return 1;
+//        } else if (this.getDuration() < otherMedia.getDuration()) {
+//            return -1;
+//        } else {
+//            return this.getTitle().compareTo(otherMedia.getTitle());
+//        }
     }
 
     public Media() {
@@ -54,17 +78,21 @@ public class Media {
         this.content = content;
     }
 
-    public void play(){
-        System.out.println("Playing " + title);
+    public void printSomething(String something) {
+        System.out.println(something);
     }
 
-    public void pause(){
-        System.out.println("Pausing " + title);
-    }
-
-    public void moveForward(int minutes){
+    public void moveForward(int minutes) {
         System.out.println("Moving forward " + minutes + " minutes");
     }
+
+    public abstract void play();
+
+    public abstract void stop();
+
+    public abstract void pause();
+
+    public abstract void resume();
 
     @Override
     public String toString() {
