@@ -1,4 +1,4 @@
-package curso1;
+package Curso1;
 
 public class Matriz {
     public static void matriz(){

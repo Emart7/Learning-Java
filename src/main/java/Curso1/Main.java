@@ -1,4 +1,4 @@
-package curso1;
+package Curso1;
 
 import Curso2.Smartphone;
 

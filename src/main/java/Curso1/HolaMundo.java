@@ -1,6 +1,5 @@
-package curso1;
+package Curso1;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HolaMundo {
