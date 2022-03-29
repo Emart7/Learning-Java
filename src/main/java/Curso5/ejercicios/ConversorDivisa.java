@@ -1,24 +1,48 @@
 package Curso5.ejercicios;
 
+import java.util.Scanner;
+
 public class ConversorDivisa {
 
-    public static double deDolarAPesos(double dolaresACOnvertir) {
+    public static void deDolarAPesos() {
+
         final double dolar;
         double peso;
+        double dolaresAConvertir;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("____________________________________________________________");
+        System.out.println("CALCULADORA DE CONVERSIÓN DE DIVISAS - DOLARES A PESOS");
+        System.out.println("____________________________________________________________\n");
+        System.out.println("Ingrese la cantidad de dolares $ a convertir: ");
+        dolaresAConvertir = sc.nextDouble();
 
         dolar = 3783.14;
-        peso = dolaresACOnvertir * dolar;
+        peso = dolaresAConvertir * dolar;
 
-        return peso;
+        System.out.println();
+        System.out.printf("$%.2f dolares son $%.2f pesos\n", dolaresAConvertir, peso);
+
     }
 
-    public static double dePesosADolar(double pesosACOnvertir) {
+    public static void dePesosADolar() {
+
         final double dolar;
-        double resultadoDolar;
+        double resultadoDolares;
+        double pesosAConvertir;
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("____________________________________________________________");
+        System.out.println("CALCULADORA DE CONVERSIÓN DE DIVISAS - PESOS A DOLARES");
+        System.out.println("____________________________________________________________\n");
+        System.out.println("Ingrese la cantidad de pesos $ a convertir: ");
+        pesosAConvertir = sc.nextDouble();
 
         dolar = 3783.14;
-        resultadoDolar = pesosACOnvertir / dolar;
+        resultadoDolares = pesosAConvertir / dolar;
 
-        return resultadoDolar;
+        System.out.println();
+        System.out.printf("$%.2f pesos son $%.2f dolares\n", pesosAConvertir, resultadoDolares);
+
     }
 }
