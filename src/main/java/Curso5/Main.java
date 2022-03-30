@@ -2,8 +2,6 @@ package Curso5;
 
 import Curso5.ejercicios.*;
 
-import java.security.cert.CertificateEncodingException;
-
 public class Main {
     public static void main(String[] args) {
 //        System.out.println(CalcularAreas.calcularAreaCirculo(6) + " metros cuadrados");
@@ -17,7 +15,10 @@ public class Main {
 //        ConversorDivisa.deDolarAPesos();
 //        ConversorDivisa.dePesosADolar();
 
-        CalcularParOImpar.calcularNumero();
+//        CalcularParOImpar.calcularNumero();
 
+//        ClasificarEdades.caracteristicaEdad();
+
+        ClasificarNotas.cualidadNota();
     }
 }
