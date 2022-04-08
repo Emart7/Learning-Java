@@ -19,6 +19,18 @@ public class Main {
 
 //        ClasificarEdades.caracteristicaEdad();
 
-        ClasificarNotas.cualidadNota();
+//        ClasificarNotas.cualidadNota();
+
+//        MultiplicarTablas.multiplicarTablas();
+
+//        CalcularMedia.hallarLaMedia();
+
+//        ConsultarArrays.arrayJuguetes();
+//        ConsultarArrays.arrayPrecios();
+
+//        Estadistica.calcularLaMedia();
+        Estadistica.calcularVarianza();
+//        Estadistica.calcularDesviacionEstandar();
+
     }
 }
